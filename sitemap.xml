@@ -5,6 +5,10 @@
          <lastmod>2026-07-19</lastmod>
     </url>
     <url>
+         <loc>https://wgparch.github.io/miracle-wm/gallery/</loc>
+         <lastmod>2026-07-19</lastmod>
+    </url>
+    <url>
          <loc>https://wgparch.github.io/miracle-wm/installation/</loc>
          <lastmod>2026-07-19</lastmod>
     </url>
@@ -14,6 +18,10 @@
     </url>
     <url>
          <loc>https://wgparch.github.io/miracle-wm/theming/</loc>
+         <lastmod>2026-07-19</lastmod>
+    </url>
+    <url>
+         <loc>https://wgparch.github.io/miracle-wm/waybar/</loc>
          <lastmod>2026-07-19</lastmod>
     </url>
 </urlset>
