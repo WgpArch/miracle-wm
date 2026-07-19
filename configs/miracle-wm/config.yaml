@@ -1,0 +1,126 @@
+# Miracle-wm Working Config
+terminal: "lxterminal"
+workspace_back_and_forth: true
+
+# Startup Apps
+startup_apps:
+  - command: "wbg /home/wgparch/Pictures/ALNW/Goldbars.jpg"
+    wait: false
+  - command: "waybar -c /home/wgparch/.config/waybar5/config.jsonc -s /home/wgparch/.config/waybar5/style.css"
+    wait: false
+  - command: "nm-applet"
+    wait: false
+  - command: "swaync"
+    wait: false
+
+# Workspace Rules
+workspace_rules:
+  - workspace: "1"
+    output: "*"
+  - workspace: "2"
+    output: "*"
+  - workspace: "3"
+    output: "*"
+  - workspace: "4"
+    output: "*"
+  - workspace: "5"
+    output: "*"
+  - workspace: "6"
+    output: "*"
+  - workspace: "7"
+    output: "*"
+  - workspace: "8"
+    output: "*"
+  - workspace: "9"
+    output: "*"
+  - workspace: "10"
+    output: "*"
+  - workspace: "11"
+    output: "*"
+
+# Gaps
+gaps:
+  inner: 8
+  outer: 12
+
+# Border - MUST have both color AND focus_color
+border:
+  width: 2
+  color: "4c7899"
+  focus_color: "88c0d0"
+
+# Custom Screenshot Actions
+custom_actions:
+  # Super + Print = Area Selection (slurp)
+  - command: "sh -c 'grim -g \"$(slurp)\" /home/wgparch/Pictures/Screenshots/miracle-wm/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png && notify-send \"Screenshot saved\"'"
+    action: down
+    modifiers:
+  #- command
+    key: Print
+
+  # Print (alone) = Full Screen
+  - command: "sh -c 'grim /home/wgparch/Pictures/Screenshots/miracle-wm/screenshot_$(date +%Y-%m-%d_%H-%M-%S).png && notify-send \"Full screenshot saved\"'"
+    action: down
+    modifiers: []
+    key: Print
+
+# Keybindings - Use "mod" instead of action_key
+keybindings:
+  - mod: "Super"
+    key: "Return"
+    action: "Exec"
+    command: "lxterminal"   
+  - mod: "Super"
+    key: "q"
+    action: "CloseWindow"
+  - mod: "Super"
+    key: "Return"
+    action: "Exec"
+    command: "lxterminal"
+  - mod: "Super"
+    key: "q"
+    action: "CloseWindow"
+  - mod: "Super"
+    key: "1"
+    action: "GoToWorkspace"
+    workspace: "1"
+  - mod: "Super"
+    key: "2"
+    action: "GoToWorkspace"
+    workspace: "2"
+  - mod: "Super"
+    key: "3"
+    action: "GoToWorkspace"
+    workspace: "3"
+  - mod: "Super"
+    key: "4"
+    action: "GoToWorkspace"
+    workspace: "4"
+  - mod: "Super"
+    key: "5"
+    action: "GoToWorkspace"
+    workspace: "5"
+  - mod: "Super"
+    key: "6"
+    action: "GoToWorkspace"
+    workspace: "6"
+  - mod: "Super"
+    key: "7"
+    action: "GoToWorkspace"
+    workspace: "7"
+  - mod: "Super"
+    key: "8"
+    action: "GoToWorkspace"
+    workspace: "8"
+  - mod: "Super"
+    key: "9"
+    action: "GoToWorkspace"
+    workspace: "9"
+  - mod: "Super"
+    key: "0"
+    action: "GoToWorkspace"
+    workspace: "10"
+  - mod: "Super"
+    key: "minus"
+    action: "GoToWorkspace"
+    workspace: "11"

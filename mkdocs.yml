@@ -1,0 +1,37 @@
+site_name: MiracleWM Documentation
+site_url: https://wgparch.github.io/miracle-wm/
+repo_url: https://github.com/WgpArch/miracle-wm
+repo_name: WgpArch/miracle-wm
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: yellow
+      accent: yellow
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: yellow
+      accent: yellow
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Keybinds: keybinds.md
+  - Waybar: waybar.md
+  - Theming: theming.md
+  - Gallery: gallery.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
